@@ -1,18 +1,19 @@
-body {
-    background-color: #C0BCB5;
-}
 
+main {
+background-color: #A1CCA5;
+display: flex;
+flex-direction: column;
+height: 100vh;
+}
 .events_container {
-    background-color: #A1CCA5;
-    padding: 4rem 2rem;
+    padding: 2rem;
     width: 80vw;
     max-width: 1170px;
-    margin: 2rem auto;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
     justify-items: center;
-    
 }
 
 .event {
@@ -20,7 +21,6 @@ body {
     background-color: #EEF5DB;
     border: 1px solid #183059;
     border-radius: 10px;
-    margin-bottom: 3rem;
     padding: 1rem 1.5rem;
     min-width: 10rem;
     display: flex;
@@ -28,7 +28,7 @@ body {
 
     h2 {
         font-weight: bold;
-        font-size: 2rem;
+        font-size: 1.2rem;
         margin-bottom: 0.5rem;
     }
 
@@ -37,7 +37,7 @@ body {
     }
 
     p {
-        font-size: 1.5rem;
+        font-size: 1rem;
         margin-bottom: 1rem;
         margin-top: 1rem;
     }
@@ -54,6 +54,30 @@ body {
             padding: 0.5rem;
             background-color: #A1CCA5;
         }
+    }
+}
+.paginate_container {
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 2rem;
+
+    .page-btn {
+        cursor: pointer;
+        border: 1px solid #274e8f;
+        border-radius: 10px;
+        background-color: #A1CCA5;
+        font-size: 1rem;
+        font-weight: bold;
+        padding: 0.3rem;
+        }
+    
+    .active-btn {
+        border: 1px solid #183059;
+        border-radius: 10px;
+        background-color: #274e8f;
     }
 }
 
