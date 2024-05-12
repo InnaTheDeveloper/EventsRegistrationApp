@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link
+      rel="stylesheet"
+      href="css-reset.css"
+    />
+    <link
+      rel="stylesheet"
+      href="index.css"
+    />
+    <title>Register</title>
+  </head>
+  <body>
+    <main>
+      <form id="event-registration-form">
+        <h2>Event Registration</h2>
+
+        <label for="full-name">Full Name:</label>
+        <input
+          type="text"
+          id="full-name"
+          name="full-name"
+          required
+        />
+
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required
+        />
+
+        <label for="date-of-birth">Date of Birth:</label>
+        <input
+          type="date"
+          id="date-of-birth"
+          name="date-of-birth"
+          required
+        />
+
+        <fieldset>
+          <legend>Where did you hear about this event?</legend>
+          <div>
+            <input
+              type="radio"
+              id="social-media"
+              name="where-heard"
+              value="social-media"
+              required
+            />
+            <label for="social-media">Social Media</label>
+          </div>
+          <div>
+            <input
+              type="radio"
+              id="friends"
+              name="where-heard"
+              value="friends"
+              required
+            />
+            <label for="friends">Friends</label>
+          </div>
+          <div>
+            <input
+              type="radio"
+              id="found-myself"
+              name="where-heard"
+              value="found-myself"
+              required
+            />
+            <label for="found-myself">Found Myself</label>
+          </div>
+        </fieldset>
+
+        <button type="submit">Submit</button>
+      </form>
+    </main>
+    <script src="form.js"></script>
+  </body>
+</html>

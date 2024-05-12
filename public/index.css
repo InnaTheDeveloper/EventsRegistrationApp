@@ -48,7 +48,11 @@ height: 100vh;
         justify-content: space-between;
 
 
-        button {
+        a {
+            display: inline-block;
+            cursor: pointer;
+            text-decoration: none;
+            color: inherit;
             border: 1px solid #274e8f;
             border-radius: 10px;
             padding: 0.5rem;

@@ -50,8 +50,8 @@ const htmlEvents = (events) => {
         <p>${date}</p>
         <p>${organizer}</p>
         <footer>
-          <button data-id="${id}">Register</button>
-          <button data-id="${id}">View</button>
+        <a href="registerEventForm.html?id=${id}">Register</a>
+        <a href="eventsParticipants.html?id=${id}">View</a>
         </footer>
       </article>
       `;
