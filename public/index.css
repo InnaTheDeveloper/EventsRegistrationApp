@@ -10,6 +10,7 @@ body {
     margin: 2rem auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
     justify-items: center;
     
 }
@@ -21,7 +22,9 @@ body {
     border-radius: 10px;
     margin-bottom: 3rem;
     padding: 1rem 1.5rem;
-    min-width: 200px;
+    min-width: 10rem;
+    display: flex;
+        flex-direction: column;
 
     h2 {
         font-weight: bold;
@@ -40,6 +43,7 @@ body {
     }
 
     footer {
+        margin-top: auto;
         display: flex;
         justify-content: space-between;
 
