@@ -1,4 +1,3 @@
-console.log("form script is loaded");
 const form = document.querySelector("#event-registration-form");
 
 form.addEventListener("submit", async (e) => {

@@ -17,7 +17,6 @@ let index = 0;
 let pages = [];
 
 const renderEvents = async () => {
-  console.log(`render called`);
   const events = await fetchEvents();
   pages = paginate(events);
   htmlEvents(pages[index]);
@@ -28,9 +27,7 @@ const fetchEvents = async () => {
   try {
     const response = await fetch(getURL);
     const data = await response.json();
-    console.log(data);
     const events = data.events;
-    console.log(events);
     return events;
   } catch (error) {
     console.log(error);
@@ -61,15 +58,12 @@ const htmlEvents = (events) => {
 };
 
 const paginate = (items) => {
-  console.log(items);
   const itemsPerPage = 8;
   const numberOfPages = Math.ceil(items.length / itemsPerPage);
-  console.log(numberOfPages);
   const itemsPaginated = Array.from({ length: numberOfPages }, (_, index) => {
     const start = index * itemsPerPage;
     return items.slice(start, start + itemsPerPage);
   });
-  console.log(itemsPaginated);
   return itemsPaginated;
 };
 
