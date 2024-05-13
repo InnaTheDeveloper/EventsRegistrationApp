@@ -24,8 +24,15 @@ const postEventRegistration = async (req, res) => {
   res.status(201).json({ registration });
 };
 
-const getEventParticipants = (req, res) => {
-  res.json({ id: req.params.id });
+const getEventParticipants = async (req, res) => {
+  try {
+    const participants = await Registration.find({
+      eventID: parseInt(req.params.id),
+    });
+    res.status(200).json({ participants });
+  } catch (error) {
+    res.status(500).json({ msg: error });
+  }
 };
 
 module.exports = {

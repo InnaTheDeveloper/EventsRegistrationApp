@@ -1,6 +1,5 @@
-console.log("broswer script linked");
-const pageURL = "http://localhost:3000";
-const getURL = "http://localhost:3000/events";
+const pageURL = "/";
+const getURL = "/events";
 
 const fetchPage = async () => {
   try {
@@ -48,7 +47,7 @@ const htmlEvents = (events) => {
         <p>${organizer}</p>
         <footer>
         <a href="registerEventForm.html?id=${id}">Register</a>
-        <a href="eventsParticipants.html?id=${id}">View</a>
+        <a href="eventsParticipants.html?id=${id}&title=${title}">View</a>
         </footer>
       </article>
       `;

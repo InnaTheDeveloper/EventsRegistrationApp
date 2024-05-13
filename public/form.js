@@ -12,16 +12,13 @@ form.addEventListener("submit", async (e) => {
 
   const id = params.get("id");
   try {
-    const response = await axios.post(
-      `http://localhost:3000/events/${id}/register`,
-      {
-        eventID: id,
-        fullName,
-        email,
-        dob,
-        hearFrom: whereHeard,
-      }
-    );
+    const response = await axios.post(`/events/${id}/register`, {
+      eventID: id,
+      fullName,
+      email,
+      dob,
+      hearFrom: whereHeard,
+    });
     if (response) {
       document.getElementById("successMessage").classList.remove("hidden");
       setTimeout(function () {
