@@ -15,10 +15,6 @@ const getAllEvents = async (req, res) => {
   }
 };
 
-const eventForm = (req, res) => {
-  res.json({ id: req.params.id });
-};
-
 const postEventRegistration = async (req, res) => {
   const registration = await Registration.create(req.body);
   res.status(201).json({ registration });
@@ -38,7 +34,6 @@ const getEventParticipants = async (req, res) => {
 module.exports = {
   postEvent,
   getAllEvents,
-  eventForm,
   postEventRegistration,
   getEventParticipants,
 };
