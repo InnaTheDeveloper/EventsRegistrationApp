@@ -20,7 +20,8 @@ const eventForm = (req, res) => {
 };
 
 const postEventRegistration = async (req, res) => {
-  console.log(req.body);
+  // console.log(req.body);
+  // res.json({ registration: req.body });
   const registration = await Registration.create(req.body);
   console.log(registration);
   res.status(201).json({ registration });
