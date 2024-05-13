@@ -2,11 +2,11 @@ console.log("app started");
 const express = require("express");
 const app = express();
 const path = require("path");
-const PORT = 3000;
+
 const events = require("./routes/events");
 const connectDB = require("./db/connect");
 require("dotenv").config();
-
+const PORT = process.env.PORT || 3000;
 //middleware
 app.use(express.static(path.join(__dirname, "public")));
 app.use(express.json());
