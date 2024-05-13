@@ -1,4 +1,5 @@
 const Event = require("../db/eventModel");
+const Registration = require("../db/registrationModel");
 
 const postEvent = async (req, res) => {
   const event = await Event.create(req.body);
@@ -18,8 +19,11 @@ const eventForm = (req, res) => {
   res.json({ id: req.params.id });
 };
 
-const postEventRegistration = (req, res) => {
-  res.json(req.body);
+const postEventRegistration = async (req, res) => {
+  console.log(req.body);
+  const registration = await Registration.create(req.body);
+  console.log(registration);
+  res.status(201).json({ registration });
 };
 
 const getEventParticipants = (req, res) => {
