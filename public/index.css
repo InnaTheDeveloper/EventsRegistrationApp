@@ -122,3 +122,73 @@ main {
         margin-top: 1rem;
     }
 }
+
+#event-registration-form {
+    max-width: 400px;
+    margin: 2rem auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#event-registration-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: bold;
+}
+
+
+#event-registration-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+#event-registration-form input[type="text"],
+#event-registration-form input[type="email"],
+#event-registration-form input[type="date"] {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#event-registration-form label[for="social-media"],
+#event-registration-form label[for="friends"],
+#event-registration-form label[for="found-myself"] {
+    margin-right: 10px;
+    display: inline-block;
+}
+
+
+#event-registration-form button[type="submit"] {
+    width: 80%;
+    padding: 10px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+#event-registration-form button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Fieldset */
+#event-registration-form fieldset {
+    border: none;
+    margin-bottom: 15px;
+}
+
+
+#event-registration-form legend {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
