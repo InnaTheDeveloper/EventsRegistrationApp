@@ -39,15 +39,15 @@ const htmlEvents = (events) => {
       const { id, title, description, event_date: date, organizer } = event;
       return `
       <article class="event">
-        <h2>${title}</h2>
-        <span
+        <h2 class="poppins-semibold-italic">${title}</h2>
+        <span class="poppins-black-italic"
           >${description}</span
         >
-        <p>${date}</p>
-        <p>${organizer}</p>
+        <p class="poppins-light">${date}</p>
+        <p class="poppins-light">${organizer}</p>
         <footer>
-        <a href="registerEventForm.html?id=${id}">Register</a>
-        <a href="eventsParticipants.html?id=${id}&title=${title}">View</a>
+        <a href="registerEventForm.html?id=${id} class="poppins-regular">Register</a>
+        <a href="eventsParticipants.html?id=${id}&title=${title}" class="poppins-regular">View</a>
         </footer>
       </article>
       `;
