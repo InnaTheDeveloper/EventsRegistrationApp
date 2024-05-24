@@ -23,3 +23,9 @@ Notes:
 
 - database uses a free tier so sometimes connection time can be long, make sure you see 'database connected' part in the console.
 - for 'View', use the first event, because I didn't create many registrations
+
+
+I've sent this link within the allotted deadline time on Telegram, but I just want to make sure it is readily available in this document as well:
+https://eventsregistrationapp-1-9yhp.onrender.com 
+
+PS. this is also a free hosting so it may take around 50 seconds to load
